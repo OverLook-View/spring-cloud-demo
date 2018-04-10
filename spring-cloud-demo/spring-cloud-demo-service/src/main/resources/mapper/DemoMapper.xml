@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.sy.spring.cloud.demo.service.springclouddemoservice.mapper.DemoMapper">
+
+    <select id="selectDemo" resultType="com.example.sy.spring.cloud.demo.springclouddemofacade.entity.Demo">
+        select * from demo where id = ${id}
+    </select>
+</mapper>

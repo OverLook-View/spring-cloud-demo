@@ -6,4 +6,4 @@ eureka:
       default-zone: http://localhost:8761/eureka/
 spring:
   application:
-    name: custom-ribbon
+    name: consumer-ribbon

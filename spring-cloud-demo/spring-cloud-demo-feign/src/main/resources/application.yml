@@ -2,7 +2,7 @@ server:
   port: 8802
 spring:
   application:
-    name: custom-feign
+    name: consumer-feign
 eureka:
   client:
     service-url:

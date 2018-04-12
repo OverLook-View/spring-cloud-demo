@@ -25,6 +25,9 @@
 		<module>spring-cloud-demo-service</module>
 		<module>spring-cloud-demo-ribbon</module>
 		<module>spring-cloud-demo-feign</module>
+		<module>spring-cloud-demo-zuul</module>
+		<module>spring-cloud-demo-config</module>
+		<module>spring-cloud-demo-turbine</module>
 	</modules>
 
 	<properties>

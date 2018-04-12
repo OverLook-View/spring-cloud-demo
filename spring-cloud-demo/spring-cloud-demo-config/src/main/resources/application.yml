@@ -1,0 +1,22 @@
+server:
+  port: 8763
+spring:
+  application:
+    name: config
+  profiles:
+    active: native
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/OverLook-View/springcloud-study/
+          search-paths: config
+          username:
+          password:
+        native:
+          search-locations: classpath:/properties/
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/

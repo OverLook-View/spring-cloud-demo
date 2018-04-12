@@ -1,10 +1,37 @@
 server:
   port: 8761
+# eureka
 eureka:
   instance:
     hostname: localhost
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
     service-url:
       default-zone: http://${eureka.instance.hostname}:${server.port}/eureka/
+spring:
+  application:
+    name: eureka
+#  config
+  profiles:
+    active: native
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/OverLook-View/springcloud-study/
+          search-paths: config
+          username:
+          password:
+        native:
+          search-locations: classpath:/properties/
+# turbine
+#security:
+#  basic:
+#    enabled: false
+turbine:
+  aggregator:
+    cluster-config: default
+  app-config: SERVICE-DEMO,CONSUMER-FEIGN,CONSUMER-RIBBON
+  cluster-name-expression: new String("default")

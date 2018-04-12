@@ -4,6 +4,7 @@ import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +17,7 @@ public class MyFilter extends ZuulFilter {
 //        routing：路由之时
 //        post： 路由之后
 //        error：发送错误调用
-        return "pre";
+        return FilterConstants.POST_TYPE;
     }
 
     @Override

@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      profile: dev
+      label: master
+#      uri: http://localhost:8763
+      enabled: true
+      discovery:
+        enabled: true
+        service-id: eureka

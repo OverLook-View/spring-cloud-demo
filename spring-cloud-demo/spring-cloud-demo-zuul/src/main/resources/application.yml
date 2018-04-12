@@ -11,7 +11,7 @@ zuul:
   routes:
     api-ribbon:
       path: /ribbon/**
-      serivce-id: CUSTOM-RIBBON
+      serivce-id: CONSUMER-RIBBON
     api-feign:
       path: /feign/**
-      service-id: CUSTOM-FEIGN
+      service-id: CONSUMER-FEIGN

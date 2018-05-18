@@ -28,6 +28,7 @@
 		<module>spring-cloud-demo-zuul</module>
 		<module>spring-cloud-demo-config</module>
 		<module>spring-cloud-demo-turbine</module>
+		<module>spring-cloud-demo-zipkin</module>
 	</modules>
 
 	<properties>

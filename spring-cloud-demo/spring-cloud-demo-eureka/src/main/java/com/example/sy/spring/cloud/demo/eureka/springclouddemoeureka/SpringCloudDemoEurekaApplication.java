@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.turbine.EnableTurbine;
 
 @EnableConfigServer
 @EnableTurbine
-//@EnableHystrixDashboard
+@EnableHystrixDashboard
 @EnableEurekaServer
 @SpringBootApplication
 public class SpringCloudDemoEurekaApplication {

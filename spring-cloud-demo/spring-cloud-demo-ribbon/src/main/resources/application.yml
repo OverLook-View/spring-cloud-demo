@@ -7,3 +7,5 @@ eureka:
 spring:
   application:
     name: consumer-ribbon
+  zipkin:
+    base-url: http://localhost:8769
